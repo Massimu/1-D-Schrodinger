@@ -1,4 +1,4 @@
-#Computational physics - Chapter 4 - section 9
+#Computational physics- written by tao pang - Chapter 4 - section 9
 #An example of solving the eigenvalue problem of the one-dimensional Schroedinger equation via the secant and Numerov methods..
 
 #packages
@@ -36,7 +36,7 @@ def simpson(y,h):
     else:
         return h*s
 #----------------------------------------------------------------
-#potential function
+#Method to provide the given potential in the problem.
 #----------------------------Potential---------------------------
 import math 
 def v(x):
@@ -44,7 +44,7 @@ def v(x):
     lamb =4
     return alpha*alpha*lamb*(lamb-1)*float(0.5-float(1/(math.pow(math.cosh(alpha*x),2))))/2.
 #---------------------------------------------------------------
-#----------------------------Secant method from chapter two-----------------------------
+#----------------------------Secant method : Find the eigenvalue via the secant search-----------------------------
 def Sacant(n,delta,x,dx):        
     k=0
     x1=x+dx
