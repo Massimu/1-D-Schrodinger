@@ -1,6 +1,5 @@
 #Computational physics - Chapter 4 - section 9
-#An example of solving the eigenvalue problem of the one-dimensional Schroedinger equation via the secant and Numerov methods.
-#this solution is baed on some primary methods which were practiced before in this book. 
+#An example of solving the eigenvalue problem of the one-dimensional Schroedinger equation via the secant and Numerov methods..
 
 #packages
 import matplotlib.pyplot as plt
@@ -21,7 +20,7 @@ ql=[{}]*(nx+1)
 qr=[{}]*(nx+1)
 s=[0]*(nx+1)
 u=[{}]*(nx+1)
-#------------------------------Simpson method from chapter two--------------------------
+#------------------------------Simpson method for finding the estimated amount for our initial values--------------------------
 def simpson(y,h):
     n=int(len(y)-1)
     s0=0
@@ -175,19 +174,4 @@ plt.show()
     
 
 
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
  
